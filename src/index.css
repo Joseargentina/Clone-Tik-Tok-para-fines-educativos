@@ -11,22 +11,52 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 @font-face {
   font-family: 'Tik-Tok';
-  src: url('assets/TikTokFont-Regular.woff2') format('wolf2');
+  src: url('assets/fonts/TikTokFont-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Tik-Tok';
-  src: url('assets/TikTokFont-Semibold.woff2') format('wolf2');
+  src: url('assets/fonts/TikTokFont-Semibold.woff2') format('woff2');
   font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Tik-Tok';
+  src: url('assets/fonts/TikTokFont-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tik-Tok Display';
+  src: url('assets/fonts/TikTokDisplayFont-Regular.woff2') format('woff2');
+  font-weight: 400;
+  /* Ajustado para evitar duplicación */
+}
+
+@font-face {
+  font-family: 'Tik-Tok Display';
+  src: url('assets/fonts/TikTokDisplayFont-Bold.woff2') format('woff2');
+  font-weight: 700;
 }
 
 body {
   margin: 0;
-  font-family: 'Tik-Tok', Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+  font-family: 'Tik-Tok ', Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+
 }
 
 h1 {
